@@ -1,0 +1,2 @@
+Asteroid a;
+Ship s;
