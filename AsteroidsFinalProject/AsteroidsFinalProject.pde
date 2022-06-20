@@ -11,5 +11,11 @@ void setup(){
 void draw(){
   background(0);
   noStroke();
-  f.drawAsteroid;
+  a.drawAsteroid();
+  s.drawShip();
+  s.moveShip();
+  s.changeDirection(keyCode);
 }
+ void keyPressed(){
+    println(keyCode);
+  }

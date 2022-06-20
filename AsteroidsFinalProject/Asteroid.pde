@@ -1,10 +1,10 @@
 public class Asteroid{
-  int xLocation;
-  int yLocation;
-  int xDirection;
-  int yDirection;
-  int speed;
-  int size;
+  float xLocation;
+  float yLocation;
+  float xDirection;
+  float yDirection;
+  float speed;
+  float size;
 
 public Asteroid(){
   xLocation = int(random(0, 400));
