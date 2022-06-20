@@ -1,13 +1,14 @@
 public class Asteroid{
-  int x;
-  int y;
+  int xLocation;
+  int yLocation;
+  int size;
 
 public Asteroid(){
-  y = int(random(0, 400));
-  y = int(random(0,400));
+  xLocation = int(random(0, 400));
+  yLocation = int(random(0,400));
 }
 public void drawAsteroid(){
   fill(122, 47, 47);
   noStroke();
-  circle()
+  circle(xLocation, yLocation, 19);
 }
