@@ -9,5 +9,7 @@ void setup(){
 }
 
 void draw(){
-  
+  background(0);
+  noStroke();
+  f.drawAsteroid;
 }
