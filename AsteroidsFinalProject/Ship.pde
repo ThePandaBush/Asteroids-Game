@@ -1,7 +1,7 @@
 public class Ship(){
   float[] x = new float[100];
   float[] y = new float[100];
-  
+}
   public Ship(){
     x = 200;
     y = 200;
