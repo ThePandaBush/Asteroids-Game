@@ -1,6 +1,6 @@
 Asteroid a;
 Ship s;
-
+float r1 = 0.1;
 void setup(){
   size(500, 500);
   background(0);

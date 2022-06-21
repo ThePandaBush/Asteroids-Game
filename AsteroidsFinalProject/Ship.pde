@@ -8,6 +8,7 @@ public class Ship{
   int y2 =  1;
   int x3 = 34;
   int y3 = 30;
+  float r1 = 0.1;
  
   
   public Ship(){
@@ -23,13 +24,14 @@ public class Ship{
   //tirangle(12, 30, 23,  1, 34, 30);
   }
   public void rotateShip(){
-    float r1 = 0.1;
     background(0);
   if(keyPressed){
     translate(width/2, height/2);
     rotate(PI - r1);
-    triangle(12, 30, 23,  1, 34, 30);
-    r1 = int(r1 + 0.1);
+    triangle(x1, y1, x2, y2, x3, y3);
+    r1 = (r1 + 0.1);
+  }else{
+    triangle(x1, y1, x2, y2, x3, y3);
   }
   }
 }
