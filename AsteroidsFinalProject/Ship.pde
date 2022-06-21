@@ -2,6 +2,12 @@ public class Ship{
   int x;
   int y;
   String currentDirection;
+  int x1 = 12;
+  int y1 = 30;
+  int x2 = 23;
+  int y2 = 1;
+  int x3 = 34;
+  int y3 = 30;
   
   public Ship(){
     x = 200;
@@ -12,7 +18,7 @@ public class Ship{
   public void drawShip(){
     noFill();
     stroke(255, 255, 255);
-    triangle(12, 30, 23, 1, 34, 30);
+    triangle(x1, y1, x2, y2, x3, y3);
   }
   
   public void moveShip(){
