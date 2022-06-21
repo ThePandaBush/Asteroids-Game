@@ -3,7 +3,7 @@ Ship s;
 float r1 = 0.1;
 void setup(){
   size(500, 500);
-  //background(0);
+  background(0);
   s = new Ship();
   a = new Asteroid();
 }
