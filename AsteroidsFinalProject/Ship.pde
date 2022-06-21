@@ -12,7 +12,7 @@ public class Ship{
   public Ship(){
     x = 200;
     y = 200;
-    currentDirection = "Up";
+    currentDirection = "Right";
   }
  
   public void drawShip(){
