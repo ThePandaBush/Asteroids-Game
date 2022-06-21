@@ -12,8 +12,7 @@ public Asteroid(){ //Find out how to make the asteroids float, this is not worki
   speed = int(random(-10, 10));
   size = int(random(10, 100));
   xDirection = xLocation + speed;
-  yDirection = yLocation + speed;
-    
+  yDirection = yLocation + speed;    
 }
 
 public void drawAsteroid(){
