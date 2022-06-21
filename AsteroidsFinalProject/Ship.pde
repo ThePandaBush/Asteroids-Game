@@ -10,13 +10,19 @@ public class Ship{
   }
  
   public void drawShip(){
-    fill(255, 255, 255);
-    rect(x, y, 15, 15);
+    noFill();
+    stroke(255, 255, 255);
+    triangle(12, 30, 23, 1, 34, 30);
   }
   
   public void moveShip(){
     if(currentDirection == "Up"){
-      y = y - 1;
+      x1 = x1 + 2;
+      y1 = y1 + 2;
+      x2 = x2 + 2;
+      y2 = y2 + 2;
+      x3 = x3 + 2;
+      y3 = y3 + 2;
     }else if(currentDirection == "Right"){
       x = x + 1;
     }else if(currentDirection == "Left"){
@@ -34,7 +40,9 @@ public class Ship{
      currentDirection = "Down";
    }else if(keyNum == 37){
      currentDirection = "Left";
-  }
+   }//else{
+    //y = y;
+    //x = x;
  }
 }
 /*

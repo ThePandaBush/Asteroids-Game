@@ -2,7 +2,7 @@ Asteroid a;
 Ship s;
 
 void setup(){
-  size(400, 400);
+  size(500, 500);
   background(0);
   s = new Ship();
   a = new Asteroid();
