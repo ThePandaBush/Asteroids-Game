@@ -20,6 +20,5 @@ public void drawAsteroid(){
   noFill();
   stroke(255, 255, 255);
   circle(xLocation, yLocation, size);
- 
   }
 }

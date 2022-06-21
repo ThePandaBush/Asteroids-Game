@@ -13,8 +13,7 @@ void draw(){
   noStroke();
   a.drawAsteroid();
   s.drawShip();
-  s.moveShip();
-  s.changeDirection(keyCode);
+  s.rotateShip();
 }
  void keyPressed(){
     println(keyCode);
