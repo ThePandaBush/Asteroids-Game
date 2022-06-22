@@ -9,9 +9,11 @@ void setup(){
 }
 
 void draw(){
+   s.drawShip();
+  background(0);
   noStroke();
   a.drawAsteroid();
-  s.drawShip();
+
   s.rotateShip();
 }
  void keyPressed(){
