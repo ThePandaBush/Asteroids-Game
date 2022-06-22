@@ -15,11 +15,7 @@ public class Ship{
     y = 200;
   }
  
-  public void drawShip(){
-    noFill();
-    stroke(255, 255, 255);
-  }
- 
+
   public void moveShip(){
     if(currentDirection == "Up"){
       y = y - 1;
@@ -47,6 +43,13 @@ public class Ship{
      currentDirection = "Left";
   }
  }
+  
+   public void drawShip(){
+    noFill();
+    stroke(255, 255, 255);
+    triangle(x1, y1, x2, y2, x3, y3);
+  }
+ 
  
   public void rotateShip(){
   if(keyPressed){
