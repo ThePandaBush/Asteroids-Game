@@ -1,7 +1,6 @@
 public class Ship{
   int x;
   int y;
-/* 
   String currentDirection;
   int x1;
   int y1;
@@ -10,15 +9,12 @@ public class Ship{
   int x3;
   int y3;
   float r1 = 0.1;
-*/
   public Ship(){
     x = 200;
     y = 200;
   }
 
   public void moveShip(){
-    //if(currentDirection == "Up"){
-      //y = y - 1;
     if(currentDirection == "Right"){
       translate(width/2, height/2);
       rotate(PI + r1);
