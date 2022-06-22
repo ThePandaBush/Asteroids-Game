@@ -12,13 +12,12 @@ void setup(){
 }
 
 void draw(){
-  //delay(300);
   background(0);
   noStroke();
   a.drawAsteroid();
   s.drawShip();
-  s.moveShip();
   s.rotateShip();
+<<<<<<< Updated upstream
   s.changeDirection(keyCode);
   t.stopwatchScore();
   t.showScore();
@@ -26,3 +25,6 @@ void draw(){
  void keyPressed(){
    // println(keyCode);
   }
+=======
+}
+>>>>>>> Stashed changes

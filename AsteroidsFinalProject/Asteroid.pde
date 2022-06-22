@@ -17,4 +17,9 @@ public void drawAsteroid(){
   stroke(255, 255, 255);
   circle(xLocation, yLocation, size);
   }
+  
+public void floatAsteroid(){
+  x = x + speed;
+  y = y + speed;
+}
 }
