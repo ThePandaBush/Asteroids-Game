@@ -9,11 +9,12 @@ void setup(){
 }
 
 void draw(){
-  background(0);
+  delay(300);
+ // background(0);
   noStroke();
   a.drawAsteroid();
   s.drawShip();
-  s.rotateShip();
+  s.moveShip();
   s.changeDirection(keyCode);
 }
  void keyPressed(){
