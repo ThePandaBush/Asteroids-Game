@@ -9,6 +9,7 @@ public class Ship{
   int x3;
   int y3;
   float r1 = 0.1;
+  
   public Ship(){
     x = 200;
     y = 200;
@@ -59,5 +60,5 @@ public class Ship{
     r1 = (r1 + 0.1);
    }
   }
- }
+ 
 }

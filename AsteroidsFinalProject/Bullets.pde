@@ -1,15 +1,10 @@
 //Objects
-Player player = new Player();
+
 //Bullet arraylist
-ArrayList<Bullet> bullets;
-//Vars to regulate shooting speed
-boolean canShoot = true;
-float canShootCounter;
-
-int i;
 
 
 
+/*
 class Player {
   PVector location;
   Player() {
@@ -28,14 +23,21 @@ class Player {
     if (canShoot == false) {
       canShootCounter ++;
       //if the right amount of time has passed. make canShoot true
-      if (canShootCounter == 5)/*change this number to change the duration*/{
+      if (canShootCounter == 5)/*change this number to change the duration{
         canShoot = true;
       }
     }
   }
-}
+}*/
 
-class Bullet {
+class Bullets {
+  /*
+  ArrayList<Bullet> bullets;
+//Vars to regulate shooting speed
+boolean canShoot = true;
+float canShootCounter;
+
+int i;
   //standard PVector used for the location of the bullet
   PVector location;
   //vars used to check the angle between location and the mouse
@@ -62,5 +64,5 @@ class Bullet {
     else {
       bullets.remove(i); //r
     }
-  }
+  }*/
 }
