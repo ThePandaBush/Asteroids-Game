@@ -1,30 +1,18 @@
-Asteroid a;
 Ship s;
-Score t;
-float sec;
-float r1 = 0.1;
+Asteroid a;
+Time t;
+int b = 1;
 void setup(){
-  size(500, 500);
+  size(400,400);
   background(0);
   s = new Ship();
   a = new Asteroid();
-  t = new Score();
+  t = new Time();
 }
-
 void draw(){
   background(0);
-  noStroke();
+  s.moveShip();
   a.drawAsteroid();
-  s.drawShip();
-  s.rotateShip();
-<<<<<<< Updated upstream
-  s.changeDirection(keyCode);
-  t.stopwatchScore();
-  t.showScore();
+  a.floatAsteroid();
+  t.showTime();
 }
- void keyPressed(){
-   // println(keyCode);
-  }
-=======
-}
->>>>>>> Stashed changes

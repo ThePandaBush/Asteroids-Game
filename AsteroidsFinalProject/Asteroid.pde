@@ -1,25 +1,39 @@
 public class Asteroid{
-  float xLocation;
-  float yLocation;
-  float speed;
+  float xSpeed;
+  float ySpeed;
   float size;
-  int x = 1;
-
-public Asteroid(){
-  speed = int(random(-10, 10));
-  xLocation = int(random(0, 500));
-  yLocation = int(random(0, 500));
-  size = int(random(10, 100));
-}
+  float x;
+  float y;
+  String[] c = {"Top", "Bot", "Right", "Left"};
 
 public void drawAsteroid(){
   noFill();
   stroke(255, 255, 255);
-  circle(xLocation, yLocation, size);
+  circle(x, y, size);
   }
-  
-public void floatAsteroid(){
-  x = x + speed;
-  y = y + speed;
+
+public Asteroid(){
+ float idx = (random(0, 3));
+ if(c [int(idx)] == "Top"){
+    x = random(10,400);
+    y = 0;
+ }else if (c [int(idx)] == "Bot"){
+    y = random(10,400);
+    x = 0;
+ }else if (c [int(idx)] == "Right"){
+    y = random(10,400);
+    x = 400;
+ }else if (c [int(idx)] == "Left"){
+    x = random(10,400);
+    y = 400;
+ }
+  xSpeed = (random(-2, 2));
+  ySpeed = (random(-5, 5));    
+  size = (random(10, 100));
 }
+
+public void floatAsteroid(){
+  x = x +- xSpeed;
+  y = y +- ySpeed;
+ }
 }
