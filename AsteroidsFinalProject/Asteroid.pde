@@ -2,30 +2,30 @@ public class Asteroid{
   float xSpeed;
   float ySpeed;
   float size;
-  float x;
-  float y;
+  float xLocation;
+  float yLocation;
   String[] c = {"Top", "Bot", "Right", "Left"};
 
 public void drawAsteroid(){
   noFill();
   stroke(255, 255, 255);
-  circle(x, y, size);
+  circle(xLocation, yLocation, size);
   }
 
 public Asteroid(){
  float idx = (random(0, 3));
  if(c [int(idx)] == "Top"){
-    x = random(10,400);
-    y = 0;
+    xLocation = random(10,400);
+    yLocation = 0;
  }else if (c [int(idx)] == "Bot"){
-    y = random(10,400);
-    x = 0;
+    yLocation = random(10,400);
+    xLocation = 0;
  }else if (c [int(idx)] == "Right"){
-    y = random(10,400);
-    x = 400;
+    yLocation = random(10,400);
+    xLocation = 400;
  }else if (c [int(idx)] == "Left"){
-    x = random(10,400);
-    y = 400;
+    xLocation = random(10,400);
+    yLocation = 400;
  }
   xSpeed = (random(-2, 2));
   ySpeed = (random(-5, 5));    
@@ -33,7 +33,12 @@ public Asteroid(){
 }
 
 public void floatAsteroid(){
-  x = x +- xSpeed;
-  y = y +- ySpeed;
+  xLocation = xLocation +- xSpeed;
+  yLocation = yLocation +- ySpeed;
+  /**
+ if(mouseX <= xLocation + size && mouseY <= yLocation + size){
+  println("You died");
+} 
+*/
  }
 }
