@@ -9,6 +9,7 @@ void setup(){
   t = new Time();
 }
 void draw(){
+  noCursor();
   
  if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size){
    s.killShip();
@@ -25,13 +26,11 @@ void draw(){
   t.showTime();
   }
 }
-void GameOver () {
-  textSize(18);
-  text("HA! YA' LOSE!", 160, 200);
-  text(t.sec, 170, 180);
+void GameOver() {
   background(100);
   textAlign(CENTER);
   fill(7);
   textSize(50);
-  text("Game Over", width/2, height/2);
+  text("Game Over!", width/2, height/2);
+  text(t.sec, width/2, height/2 + 40);
 }
