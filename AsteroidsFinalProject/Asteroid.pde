@@ -33,11 +33,13 @@ public Asteroid(){
 }
 
 public void floatAsteroid(){
-  xLocation = xLocation +- xSpeed;
-  yLocation = yLocation +- ySpeed;
+  //xLocation = xLocation +- xSpeed;
+  //yLocation = yLocation +- ySpeed;
 
- if(mouseX <= xLocation + size && mouseY <= yLocation + size){
-  println("You died");
-} 
+public void collsionAsteroid(){
+ if(dist(float(mouseX), float(mouseY), xLocation, yLocation) <= size){
+  textSize(18);
+  text("You died!", 175.0, 200.0);
+  } 
  }
 }

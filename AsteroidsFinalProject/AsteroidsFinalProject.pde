@@ -1,7 +1,7 @@
 Ship s;
 Asteroid a;
 Time t;
-int b = 1;
+Lose l;
 void setup(){
   size(400,400);
   background(0);
@@ -15,4 +15,5 @@ void draw(){
   a.drawAsteroid();
   a.floatAsteroid();
   t.showTime();
+ } 
 }
