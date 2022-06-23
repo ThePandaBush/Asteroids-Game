@@ -20,3 +20,10 @@ void draw(){
   text(t.sec, 170, 180);
   } 
 }
+void GameOver () {
+  background(100);
+  textAlign(CENTER);
+  fill(7);
+  textSize(50);
+  text("Game Over", width/2, height/2);
+}
