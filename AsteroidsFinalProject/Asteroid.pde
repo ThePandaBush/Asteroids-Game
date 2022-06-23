@@ -1,4 +1,3 @@
-
 public class Asteroid{
   float xSpeed;
   float ySpeed;
@@ -34,7 +33,7 @@ public Asteroid(){
 }
 
 public void floatAsteroid(){
-  //xLocation = xLocation +- xSpeed;
- // yLocation = yLocation +- ySpeed;
+  xLocation = xLocation +- xSpeed;
+  yLocation = yLocation +- ySpeed;
  }
 }

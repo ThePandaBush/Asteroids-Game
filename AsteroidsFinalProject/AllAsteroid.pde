@@ -1,3 +1,4 @@
+/*
 public class AllAsteroid{
   Asteroid[] allAsteroids = new Asteroid[10];
   
@@ -21,7 +22,7 @@ public class AllAsteroid{
       println(i + " " + allAsteroids[i]);
     }
   }*/
-  
+  /*
   public void moveAllAsteroids(){
     for(int i = 0; i < allAsteroids.length; i = i + 1){
       allAsteroids[i].moveDown();
@@ -35,3 +36,4 @@ public class AllAsteroid{
     }
   }
 }
+*/

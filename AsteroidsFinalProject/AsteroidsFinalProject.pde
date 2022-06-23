@@ -11,7 +11,7 @@ void setup(){
 void draw(){
   noCursor();
   
- if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size/1.5){
+ if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size/2){
    s.killShip();
   } 
   
@@ -34,7 +34,7 @@ void GameOver() {
   text(t.sec, width/2, height/2 + 40);
 }
 
-
+/*
 AllAsteroid asteroids;
 
 
@@ -53,3 +53,4 @@ void draw(){
   asteroids.moveAllAsteroids();
   asteroids.drawAllAsteroids();
 }
+*/

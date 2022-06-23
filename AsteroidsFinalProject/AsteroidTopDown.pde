@@ -1,3 +1,4 @@
+/*
 public class Asteroid{
   public float x;
   public float y;
@@ -19,3 +20,4 @@ public class Asteroid{
     circle(x, y, size);
   }
 }
+*/
