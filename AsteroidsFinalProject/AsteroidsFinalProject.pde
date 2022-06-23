@@ -2,7 +2,7 @@ Ship s;
 Asteroid a;
 Time t;
 void setup(){
-  size(400,400);
+  size(400,400); //fullScreen();
   background(0);
   s = new Ship();
   a = new Asteroid();
