@@ -9,18 +9,26 @@ void setup(){
   t = new Time();
 }
 void draw(){
-  background(0);
+  
+ if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size){
+   s.killShip();
+  
+  } 
+  
+  if(s.isDead()){
+    GameOver();
+  }else{
+    background(0);
   s.moveShip();
   a.drawAsteroid();
   a.floatAsteroid();
   t.showTime();
- if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size){
+  }
+}
+void GameOver () {
   textSize(18);
   text("HA! YA' LOSE!", 160, 200);
   text(t.sec, 170, 180);
-  } 
-}
-void GameOver () {
   background(100);
   textAlign(CENTER);
   fill(7);
