@@ -11,9 +11,8 @@ void setup(){
 void draw(){
   noCursor();
   
- if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size){
+ if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size/1.5){
    s.killShip();
-  
   } 
   
   if(s.isDead()){

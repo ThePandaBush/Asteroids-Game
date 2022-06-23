@@ -33,7 +33,7 @@ public Asteroid(){
 }
 
 public void floatAsteroid(){
-  xLocation = xLocation +- xSpeed;
-  yLocation = yLocation +- ySpeed;
+  //xLocation = xLocation +- xSpeed;
+ // yLocation = yLocation +- ySpeed;
  }
 }
