@@ -1,9 +1,9 @@
 public class Asteroid{
   float xSpeed;
   float ySpeed;
-  float size;
-  float xLocation;
-  float yLocation;
+  public float size;
+  public float xLocation;
+  public float yLocation;
   String[] c = {"Top", "Bot", "Right", "Left"};
 
 public void drawAsteroid(){
@@ -11,7 +11,7 @@ public void drawAsteroid(){
   stroke(255, 255, 255);
   circle(xLocation, yLocation, size);
   }
-
+  
 public Asteroid(){
  float idx = (random(0, 3));
  if(c [int(idx)] == "Top"){
@@ -33,13 +33,7 @@ public Asteroid(){
 }
 
 public void floatAsteroid(){
-  //xLocation = xLocation +- xSpeed;
-  //yLocation = yLocation +- ySpeed;
-
-public void collsionAsteroid(){
- if(dist(float(mouseX), float(mouseY), xLocation, yLocation) <= size){
-  textSize(18);
-  text("You died!", 175.0, 200.0);
-  } 
+  xLocation = xLocation +- xSpeed;
+  yLocation = yLocation +- ySpeed;
  }
 }
