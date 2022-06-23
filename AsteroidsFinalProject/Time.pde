@@ -7,7 +7,7 @@ public class Time{
   
   public void showTime(){
     sec = 0;
-    sec = millis() / 10;
+    sec = millis() / 1000;
     println(sec);
     text(sec, 0, 10);
   }
