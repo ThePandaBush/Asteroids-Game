@@ -1,5 +1,8 @@
 Ship s;
 Asteroid a;
+Asteroid2 a2;
+Asteroid3 a3;
+Asteroid4 a4;
 Time t;
 void setup(){
   smooth();
@@ -7,25 +10,59 @@ void setup(){
   background(0);
   s = new Ship();
   a = new Asteroid();
+  a2 = new Asteroid2();
+  a3 = new Asteroid3();
+  a4 = new Asteroid4();
   t = new Time();
 }
 void draw(){
   noCursor();
-  
+ /* 
  if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size/2){
    s.killShip();
   } 
-  
+ if(dist(float(mouseX), float(mouseY), a2.xLocation, a2.yLocation) <= a.size/2){
+   s.killShip();
+  } 
+ if(dist(float(mouseX), float(mouseY), a3.xLocation, a3.yLocation) <= a.size/2){
+   s.killShip();
+  } 
+ if(dist(float(mouseX), float(mouseY), a4.xLocation, a4.yLocation) <= a.size/2){
+   s.killShip();
+  } 
+*/
  if(s.isDead()){
     GameOver();
   }else{
   background(0);
-  s.moveShip();
   a.drawAsteroid();
-  a.floatAsteroid();
+    a.floatAsteroid();
+      a.bounceAsteroid();
+  a2.drawAsteroid2();
+    a2.floatAsteroid2();
+      a2.bounceAsteroid2();
+  a3.drawAsteroid3();
+    a3.floatAsteroid3();
+      a3.bounceAsteroid3();
+  a4.drawAsteroid4();
+    a4.floatAsteroid4();
+      a4.bounceAsteroid4();
   t.showTime();
+  s.moveShip();
+
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 void GameOver() {
   background(100);
   textAlign(CENTER);
@@ -34,22 +71,3 @@ void GameOver() {
   text("Game Over!", width/2, height/2);
   text(t.sec, width/2, height/2 + 40);
 }
-
-/*
-AllAsteroid asteroids;
-
-void setup(){
-  size(400, 400);
-  
-  asteroids = new AllAsteroid();
-  for(int i = 0; i < 100; i = i + 1){
-    asteroids.addAsteroid(new Asteroid());
-  }
-}
-
-void draw(){
-  background(0, 0, 0);
-  asteroids.moveAllAsteroids();
-  asteroids.drawAllAsteroids();
-}
-*/
