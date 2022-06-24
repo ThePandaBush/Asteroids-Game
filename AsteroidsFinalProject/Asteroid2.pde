@@ -7,12 +7,15 @@ public class Asteroid2{
   String[] c = {"Top", "Bot", "Right", "Left"};
   int z = 1;
 
+//we set the color of this asteroid to blue, and we randomized the size each time the game is launched
 public void drawAsteroid2(){
   circle(xLocation, yLocation, size);
   noFill();
   stroke(0, 255, 255); //blue
 }
   
+//it's the same code copied but with a new asteroid so this one contnues to choose
+//the location of the asteroid when the game is launched
 public Asteroid2(){
  float idx = (random(0, 3));
  if(c [int(idx)] == "Top"){
@@ -32,12 +35,12 @@ public Asteroid2(){
   ySpeed = (random(-5, 5));    
   size = (random(10, 100));
 }
-
+//determines the movement of the asteroid
 public void floatAsteroid2(){
   xLocation = xLocation +- xSpeed;
   yLocation = yLocation +- ySpeed;
  }
- 
+ //this bounces the asteroid off the borders
 public void bounceAsteroid2(){
   if(xLocation >= 400){
     xSpeed = xSpeed * -1;

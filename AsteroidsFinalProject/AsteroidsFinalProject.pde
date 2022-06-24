@@ -15,6 +15,7 @@ void setup(){
   a4 = new Asteroid4();
   t = new Time();
 }
+//we removed the cursor so we're only moving a circle to simplify whats shown on the screen
 void draw(){
   noCursor();
  /* 
@@ -52,16 +53,7 @@ void draw(){
 
   }
 }
-
-
-
-
-
-
-
-
-
-
+// Ends the game if you touch an asteroid and shows the end screen
 
 void GameOver() {
   background(100);

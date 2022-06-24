@@ -1,3 +1,4 @@
+//we used the mouse as our "ship" and the idea is to move your mouse and avoid each asteroid
 public class Ship{
   int x;
   int y;
