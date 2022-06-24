@@ -10,7 +10,7 @@ public class Asteroid3{
 public void drawAsteroid3(){
   circle(xLocation, yLocation, size);
   noFill();
-  stroke(255, 0, 255); //purple
+  stroke(255, 0, 255);
 }
   
 public Asteroid3(){

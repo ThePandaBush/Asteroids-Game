@@ -12,7 +12,7 @@ public class Asteroid{
 public void drawAsteroid(){
   circle(xLocation, yLocation, size);
   noFill();
-  stroke(255, 255, 0); //yellow
+  stroke(255, 255, 0);
 }
 //Sets the asteroids speed and location allowing it to randomize each time the game is run making sure that each value is randomized
 //we used 390 instead of 400 so they wouldn't appear to go further than the actual border

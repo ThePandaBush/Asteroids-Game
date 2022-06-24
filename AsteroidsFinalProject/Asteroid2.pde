@@ -11,7 +11,7 @@ public class Asteroid2{
 public void drawAsteroid2(){
   circle(xLocation, yLocation, size);
   noFill();
-  stroke(0, 255, 255); //blue
+  stroke(0, 255, 255); 
 }
   
 //it's the same code copied but with a new asteroid so this one contnues to choose
