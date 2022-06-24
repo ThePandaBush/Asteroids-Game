@@ -18,7 +18,7 @@ void setup(){
 //we removed the cursor so we're only moving a circle to simplify whats shown on the screen
 void draw(){
   noCursor();
- /* 
+  
  if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size/2){
    s.killShip();
   } 
@@ -31,7 +31,7 @@ void draw(){
  if(dist(float(mouseX), float(mouseY), a4.xLocation, a4.yLocation) <= a.size/2){
    s.killShip();
   } 
-*/
+
  if(s.isDead()){
     GameOver();
   }else{
@@ -53,7 +53,10 @@ void draw(){
 
   }
 }
+<<<<<<< HEAD
 // Ends the game if you touch an asteroid and shows the end screen
+=======
+>>>>>>> e6c3f1c79c491ea5e7cf39c55fb8a2069d0c7ab4
 
 void GameOver() {
   background(100);

@@ -5,6 +5,7 @@ public class Asteroid{
   public float size;
   public float xLocation;
   public float yLocation;
+  float speedUp;
   String[] c = {"Top", "Bot", "Right", "Left"};
 
 //we only changed the outline of the asteroid to help differentiate each asteroid in the game
@@ -55,5 +56,5 @@ public void bounceAsteroid(){
   }else if(yLocation >= 400){
    ySpeed = ySpeed * -1;
   }
-}
+ }
 }
