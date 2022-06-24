@@ -17,7 +17,7 @@ void setup(){
 }
 void draw(){
   noCursor();
- /* 
+  
  if(dist(float(mouseX), float(mouseY), a.xLocation, a.yLocation) <= a.size/2){
    s.killShip();
   } 
@@ -30,7 +30,7 @@ void draw(){
  if(dist(float(mouseX), float(mouseY), a4.xLocation, a4.yLocation) <= a.size/2){
    s.killShip();
   } 
-*/
+
  if(s.isDead()){
     GameOver();
   }else{
@@ -52,16 +52,6 @@ void draw(){
 
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 void GameOver() {
   background(100);
