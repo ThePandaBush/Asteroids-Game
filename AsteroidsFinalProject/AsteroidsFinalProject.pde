@@ -1,4 +1,4 @@
-Ship s;
+Ship s; 
 Asteroid a;
 Asteroid2 a2;
 Asteroid3 a3;

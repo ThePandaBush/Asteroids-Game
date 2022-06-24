@@ -43,7 +43,7 @@ public void bounceAsteroid(){
   }else if(xLocation <= 0){
     xSpeed = xSpeed * -1;
   }  
-  if(a.yLocation >= 400){
+  if(yLocation >= 400){
    ySpeed = ySpeed * -1;
   }else if(yLocation <= 0){
    ySpeed = ySpeed * -1;
