@@ -2,6 +2,7 @@ Ship s;
 Asteroid a;
 Time t;
 void setup(){
+  smooth();
   size(400,400); //fullScreen();
   background(0);
   s = new Ship();
@@ -15,10 +16,10 @@ void draw(){
    s.killShip();
   } 
   
-  if(s.isDead()){
+ if(s.isDead()){
     GameOver();
   }else{
-    background(0);
+  background(0);
   s.moveShip();
   a.drawAsteroid();
   a.floatAsteroid();
@@ -37,7 +38,6 @@ void GameOver() {
 /*
 AllAsteroid asteroids;
 
-
 void setup(){
   size(400, 400);
   
@@ -46,7 +46,6 @@ void setup(){
     asteroids.addAsteroid(new Asteroid());
   }
 }
-
 
 void draw(){
   background(0, 0, 0);

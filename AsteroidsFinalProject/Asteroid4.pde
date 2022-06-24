@@ -1,4 +1,4 @@
-public class Asteroid{
+public class Asteroid4{
   float xSpeed;
   float ySpeed;
   public float size;
@@ -13,7 +13,7 @@ public void drawAsteroid(){
   stroke(255, 255, 255);
 }
   
-public Asteroid(){
+public Asteroid4(){
  float idx = (random(0, 3));
  if(c [int(idx)] == "Top"){
     xLocation = random(10,400);

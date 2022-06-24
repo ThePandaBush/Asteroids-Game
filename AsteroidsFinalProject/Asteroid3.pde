@@ -1,4 +1,4 @@
-public class Asteroid{
+public class Asteroid3{
   float xSpeed;
   float ySpeed;
   public float size;
@@ -7,13 +7,13 @@ public class Asteroid{
   String[] c = {"Top", "Bot", "Right", "Left"};
   int z = 1;
 
-public void drawAsteroid(){
+public void drawAsteroid3(){
   circle(xLocation, yLocation, size);
   noFill();
   stroke(255, 255, 255);
 }
   
-public Asteroid(){
+public Asteroid3(){
  float idx = (random(0, 3));
  if(c [int(idx)] == "Top"){
     xLocation = random(10,400);
@@ -33,7 +33,7 @@ public Asteroid(){
   size = (random(10, 100));
 }
 
-public void floatAsteroid(){
+public void floatAsteroid3(){
   xLocation = xLocation +- xSpeed;
   yLocation = yLocation +- ySpeed;
  }
